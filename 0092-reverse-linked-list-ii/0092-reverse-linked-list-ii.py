@@ -21,6 +21,6 @@ class Solution:
             prev, curr = curr, tmpNext
             
         # 3) Update pointers 
-        leftPrev.next.next = curr
-        leftPrev.next = prev
+        leftPrev.next.next = curr #curr is node after "right"
+        leftPrev.next = prev #prev is "right"
         return dummy.next
